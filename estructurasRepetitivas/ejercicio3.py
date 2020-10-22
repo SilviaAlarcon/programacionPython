@@ -8,6 +8,24 @@ Ingrese un número: -7
 La media es: 4.0 """
 
 #MEDIA FORMA 1
+numeroUsuario = int(input('Ingrese un numero: '))
+contador = 1
+suma = numeroUsuario
+
+while numeroUsuario > 0:
+    numeroUsuario = int(input('Ingrese un numero: '))
+    if numeroUsuario > 0:
+        suma += numeroUsuario
+        contador += 1
+    else:
+        print('Resultado listo')
+
+media = suma / contador
+
+print('La media es {}'.format(media))
+
+
+#MEDIA FORMA 2
 """ import statistics as stats
 
 numeroUsuario = int(input('Ingrese un numero: '))
@@ -24,7 +42,7 @@ media = stats.mean(lista)
 print('La media es {}'.format(media)) """
 
 
-#MEDIA FORMA 2
+#MEDIA FORMA 3
 """ numeroUsuario = int(input('Ingrese un numero: '))
 lista = [numeroUsuario]
 suma = numeroUsuario
@@ -42,22 +60,6 @@ media = suma / longitud
 
 print('La media es {}'.format(media)) """
 
-#MEDIA FORMA 3
-numeroUsuario = int(input('Ingrese un numero: '))
-contador = 1
-suma = numeroUsuario
-
-while numeroUsuario > 0:
-    numeroUsuario = int(input('Ingrese un numero: '))
-    if numeroUsuario > 0:
-        suma += numeroUsuario
-        contador += 1
-    else:
-        print('Resultado listo')
-
-media = suma / contador
-
-print('La media es {}'.format(media))
 
 #OBTENER LA MEDIANA
 """ mediana = int(input('Ingrese un numero: '))

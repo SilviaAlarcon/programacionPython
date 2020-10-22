@@ -21,4 +21,3 @@ print('Tabla del {}'.format(tabla))
 for i in range(1, 11):
     resultado = tabla * i
     print('{} x {} = {}'.format(tabla, i, resultado))
-    i += 1
